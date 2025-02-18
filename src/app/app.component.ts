@@ -1,12 +1,23 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+
+import { MenuBarComponent } from './shared/components/menu-bar/menu-bar.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, CommonModule, MenuBarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
-  title = 'pipes-app';
+export class AppComponent implements OnInit {
+
+  title = 'Pipes App';
+
+
+  ngOnInit() {
+    // do something
+  }
+
+
 }
