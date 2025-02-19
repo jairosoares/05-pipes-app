@@ -1,0 +1,46 @@
+<p-panel header="Pipes Basicos" class="p-1">
+  <p>
+    Pipes incluidos em Angular
+  </p>
+</p-panel>
+
+<div class="grid">
+
+  <div class="col-12 md:col-4">
+    <p-card header="uppercase">
+      {{ nameLower | uppercase }}
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-4">
+    <p-card header="lowercase">
+      {{ nameUpper | lowercase }}
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-4">
+    <p-card header="titlecase">
+      {{ fullName | titlecase }}
+    </p-card>
+  </div>
+
+
+  <div class="col-12 md:col-6">
+    <p-card header="Custom Date">
+      <ul>
+        <li> fecha </li>
+        <li> fecha | date </li>
+      </ul>
+    </p-card>
+  </div>
+  <div class="col-12 md:col-6">
+    <p-card header="Custom Date II">
+      <ul>
+        <li> {{ customDate }} </li>
+        <li> {{ customDate | date }} </li>
+      </ul>
+    </p-card>
+  </div>
+
+
+</div>
